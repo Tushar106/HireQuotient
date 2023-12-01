@@ -51,6 +51,7 @@ function App() {
     const c = data.filter( x => !selected.filter( y => y === x.id).length);
     setData([...c]);
     setBackUp([...c]);
+    setCheck(false);
     setSelected([]);
   }
   const handleSelectAll=()=>{
